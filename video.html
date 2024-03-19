@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex items-center justify-between p-5 navbar">
+        <div class="mr-3">
+            <img src="images/home.png" onclick="home('index.html')" class="w-6 hover:cursor-pointer" alt="">
+        </div>
+        <div class="flex items-center mr-3 space-x-3"> 
+            <img src="images/logo2.png" class="w-16" alt="">
+            <h1 class="font-medium text-slate-700">Video Course Kit</h1>
+        </div>
+        <div>
+            <p class="font-bold hover:underline hover:cursor-pointer">Sign Up</p>
+        </div>
+    </div>
+
+
+    <div class="p-5 my-5 text-center bg-slate-800">
+        <p class="text-white"><span class="underline">Sign in</span> to track your progress →</p>
+    </div>
+
+    <div class="flex flex-col px-5 py-3">
+        <div class="flex w-full lg:flex-row">
+            <iframe class="w-full h-96" src="https://www.youtube.com/embed/9Y8iq5fDL38" id="video" frameborder="0" ></iframe>
+            <div class="hidden lg:block">
+                <div class="flex flex-row px-5 py-3 hover:cursor-pointer hover:bg-slate-100" onclick="change('Start Learning HTML','This leason focus on understanding the basics of HTML and how it works.','https:/'+'/www.youtube.com/embed/9Y8iq5fDL38')">
+                    <img src="images/html.jpg" class="w-28" alt="">
+                    <div class="flex flex-col justify-around px-5 py-1">
+                        <h1 class="text-lg font-bold">Start Learning HTML</h1>
+                        <p class="italic text-slate-700">This leason focus on understanding the basics of HTML and how it works.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row px-5 py-3 hover:cursor-pointer hover:bg-slate-100" onclick="change('Tags in HTML','This leason focus on understanding the basics tags in HTML.','https:/'+'/www.youtube.com/embed/RlUZOrrUbao')">
+                    <img src="images/html.jpg" class="w-28" alt="">
+                    <div class="flex flex-col justify-around px-5 py-1">
+                        <h1 class="text-lg font-bold">Tags in HTML</h1>
+                        <p class="italic text-slate-700">This leason focus on understanding the basics tags in HTML.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row px-5 py-3 hover:cursor-pointer hover:bg-slate-100" onclick="change('Text Formatting','This leason focus on understanding how text formatting can be done.','https:/'+'/www.youtube.com/embed/L54yyiRpBlI')">
+                    <img src="images/html.jpg" class="w-28" alt="">
+                    <div class="flex flex-col justify-around px-5 py-1">
+                        <h1 class="text-lg font-bold">Text Formatting</h1>
+                        <p class="italic text-slate-700">This leason focus on understanding how text formatting can be done.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-1">
+            <h1 id="heading" class="justify-start py-5 text-2xl font-bold text-slate-700">Start Learning HTML</h1>
+            <p id="content">This leason focus on understanding the basics of HTML and how it works.</p>
+        </div>
+        <div class="lg:hidden">
+            <div class="flex flex-row px-5 py-3 hover:cursor-pointer hover:bg-slate-" onclick="change('Start Learning HTML','This leason focus on understanding the basics of HTML and how it works.','https:/'+'/www.youtube.com/embed/9Y8iq5fDL38')">
+                <img src="images/html.jpg" class="w-28" alt="">
+                <div class="flex flex-col justify-around px-5 py-1">
+                    <h1 class="text-lg font-bold">Start Learning HTML</h1>
+                    <p class="italic text-slate-700">This leason focus on understanding the basics of HTML and how it works.</p>
+                </div>
+            </div>
+            <div class="flex flex-row px-5 py-3 hover:cursor-pointer hover:bg-slate-100" onclick="change('Tags in HTML','This leason focus on understanding the basics tags in HTML.','https:/'+'/www.youtube.com/embed/RlUZOrrUbao')">
+                <img src="images/html.jpg" class="w-28" alt="">
+                <div class="flex flex-col justify-around px-5 py-1">
+                    <h1 class="text-lg font-bold">Tags in HTML</h1>
+                    <p class="italic text-slate-700">This leason focus on understanding the basics tags in HTML.</p>
+                </div>
+            </div>
+            <div class="flex flex-row px-5 py-3 hover:cursor-pointer hover:bg-slate-100" onclick="change('Text Formatting','This leason focus on understanding how text formatting can be done.','https:/'+'/www.youtube.com/embed/L54yyiRpBlI')">
+                <img src="images/html.jpg" class="w-28" alt="">
+                <div class="flex flex-col justify-around px-5 py-1">
+                    <h1 class="text-lg font-bold">Text Formatting</h1>
+                    <p class="italic text-slate-700">This leason focus on understanding how text formatting can be done.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#f2f2f2] footer text-gray-500 py-2">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+            <div class="px-5 space-y-2 py-7 item">
+                <h1 class="font-medium">What's New</h1>
+                <p class="text-xs">SQL Course</p>
+                <p class="text-xs">Php Tutorial</p>
+                <p class="text-xs">Pthon Reference</p>
+                <p class="text-xs">Bootstrap Tutorial</p>
+                <p class="text-xs">Tailwind CSS Master Class</p>
+                <p class="text-xs">Front End Certifications</p>
+            </div>
+            <div class="px-5 space-y-2 py-7 item">
+                <h1 class="font-medium">What's New</h1>
+                <p class="text-xs">SQL Course</p>
+                <p class="text-xs">Php Tutorial</p>
+                <p class="text-xs">Pthon Reference</p>
+                <p class="text-xs">Bootstrap Tutorial</p>
+                <p class="text-xs">Tailwind CSS Master Class</p>
+                <p class="text-xs">Front End Certifications</p>
+            </div>
+            <div class="px-5 space-y-2 py-7 item">
+                <h1 class="font-medium">What's New</h1>
+                <p class="text-xs">SQL Course</p>
+                <p class="text-xs">Php Tutorial</p>
+                <p class="text-xs">Pthon Reference</p>
+                <p class="text-xs">Bootstrap Tutorial</p>
+                <p class="text-xs">Tailwind CSS Master Class</p>
+                <p class="text-xs">Front End Certifications</p>
+            </div>
+            <div class="px-5 space-y-2 py-7 item">
+                <h1 class="font-medium">What's New</h1>
+                <p class="text-xs">SQL Course</p>
+                <p class="text-xs">Php Tutorial</p>
+                <p class="text-xs">Pthon Reference</p>
+                <p class="text-xs">Bootstrap Tutorial</p>
+                <p class="text-xs">Tailwind CSS Master Class</p>
+                <p class="text-xs">Front End Certifications</p>
+            </div>
+        </div>
+        <div class="flex flex-col m-5 space-y-3 text-xs lg:flex-row lg:items-center lg:space-y-0 lg:justify-between">
+            <div class="flex flex-row space-x-3 lg:space-y-0">
+                <div class="flex items-center space-x-2">
+                    <img src="images/earth.png" class="w-6" alt="">
+                    <span>English (India)</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="images/decision.png" class="w-6" alt="">
+                    <span>Your Privacy Choices</span>
+                </div>
+            </div>
+            <div class="flex flex-row flex-wrap py-3 sm:justify-end">
+                <span class="pt-2 pr-3">Contact Us</span>
+                <samp class="pt-2 pr-3">Privacy</samp>
+                <samp class="pt-2 pr-3">Terms of use</samp>
+                <span class="pt-2 pr-3">Trademarks</span>
+                <span class="pt-2 pr-3">About our ads</span>
+                <span class="pt-2 pr-3">© Project 2024</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function change(title,content,link){
+            const video=document.getElementById("video")
+            const heading=document.getElementById("heading")
+            const contentElement=document.getElementById("content")
+
+            video.src = link;
+            heading.textContent = title;
+            contentElement.textContent = content;
+        }
+        function home(loc){
+            window.location.href=loc
+        }
+    </script>
+</body>
+</html>
